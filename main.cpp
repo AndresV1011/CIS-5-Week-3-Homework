@@ -1,36 +1,41 @@
 #include <iostream>
 #include <string>
 
-// Homework 3 — Your Name
+// Homework 3 — Andres Valenzuela
 // CIS 5 Week 03 · Types & variables
 
 int main() {
-  const int CURRENT_YEAR = 2026;
+	const int CURRENT_YEAR = 2026;
 
-  // TODO: Lab 3 boxes — initialize on the same line
-  // std::string name = ...;
-  // int age = ...;
-  // double height_m = ...;
-  // char initial = ...;
-  // bool student = ...;
+	// TODO: Lab 3 boxes — initialize on the same line
+	std::string name = "Andres V";
+	int age = 15;
+	double height_m = 1.65;
+	char initial = 'AV';
+	bool student = true;
+	int credits = 10;
+	double gpa = 4.3;
 
-  // TODO: two more from this week's menu
-  // int credits = ...;
-  // double gpa = ...;
 
-  // TODO: a comment that explains a type choice (why int, why double, or why const)
+	// The credits needs to be int because credits are whole numbers, which credits are
+	//The gpa is a double because it can include decimal points, which gpa has.
 
-  std::cout << "=== About me ===\n";
-  // TODO: labeled lines from the names
-  // TODO: one short paragraph from those same names — not leftover quotes
+	std::cout << "=== About me ===\n";
+	std::cout << "Name: " << name << "\n";
+	std::cout << "Age: " << age << "\n";
+	std::cout << "Height (m):" << height_m << "\n";
+	std::cout << "Initial: " << initial << "\n";
+	std::cout << "Student: " << student << "\n";
+	std::cout << "Credits: " << credits << "\n";
+	std::cout << "GPA: " << gpa << "\n";
+	std::cout << "\n";
+	std::cout << "Andres is 15, 1.65 meters tall, who is a student taking 10 credits with a 4.3 gpa.";
 
-  // TODO: change one value from a first choice. Comment the old value,
-  // the new value, and why the console followed.
+	// I changed the initials to being AV from A
+	// It still prints AV because it prints initial, not the leftover A
 
-  // TODO: two lines that would not compile — leave them commented
-  // Example shape (write your own, with the reason):
-  // int age = "nineteen";   // would not compile — ...
-  // CURRENT_YEAR = 2027;    // would not compile — ...
-
-  return 0;
+	// TODO: two lines that would not compile — leave them commented
+	// int credits = "10";   // would not compile — I forgot to put the semicolon at the end, which is needed at the end of a statement
+	// name = "Andres V"   // would not compile — I had forgotten to use the quotation marks which resulted in it not compiling
+	return 0;
 }
